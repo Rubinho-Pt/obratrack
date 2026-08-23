@@ -306,3 +306,36 @@ footer {
     justify-content: space-between;
   }
 }
+
+.due-warning {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+ 
+.due-warning.due-soon {
+  color: #995900;
+  background: #fff0cf;
+}
+ 
+.due-warning.due-today {
+  color: #9c2626;
+  background: #ffe1e1;
+}
+ 
+.due-warning.overdue {
+  color: #ffffff;
+  background: var(--red);
+}
+ 
+.task.due-soon {
+  border-left: 4px solid var(--orange);
+}
+ 
+.task.due-today,
+.task.overdue {
+  border-left: 4px solid var(--red);
+}
