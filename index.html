@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ObraTrack</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div>
+      <p class="eyebrow">GESTÃO DE OBRA</p>
+      <h1>ObraTrack</h1>
+      <p class="subtitle">Organiza tarefas, prazos e prioridades.</p>
+    </div>
+
+    <div class="date" id="currentDate"></div>
+  </header>
+
+  <main>
+    <section class="stats">
+      <article class="stat-card">
+        <span>Total</span>
+        <strong id="totalTasks">0</strong>
+      </article>
+
+      <article class="stat-card warning">
+        <span>Pendentes</span>
+        <strong id="pendingTasks">0</strong>
+      </article>
+
+      <article class="stat-card success">
+        <span>Concluídas</span>
+        <strong id="completedTasks">0</strong>
+      </article>
+    </section>
+
+    <section class="panel">
+      <h2>Adicionar tarefa</h2>
+
+      <form id="taskForm">
+        <div class="form-grid">
+          <label>
+            Tarefa
+            <input
+              type="text"
+              id="taskName"
+              placeholder="Ex.: Comprar cimento"
+              required
+            />
+          </label>
+
+          <label>
+            Obra
+            <input
+              type="text"
+              id="projectName"
+              placeholder="Ex.: Remodelação T2"
+              required
+            />
+          </label>
+
+          <label>
+            Prazo
+            <input type="date" id="dueDate" required />
+          </label>
+
+          <label>
+            Prioridade
+            <select id="priority">
+              <option value="Baixa">Baixa</option>
+              <option value="Média" selected>Média</option>
+              <option value="Alta">Alta</option>
+            </select>
+          </label>
+        </div>
+
+        <button type="submit">+ Adicionar tarefa</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <div class="tasks-header">
+        <h2>As minhas tarefas</h2>
+
+        <select id="filterTasks">
+          <option value="all">Todas</option>
+          <option value="pending">Pendentes</option>
+          <option value="completed">Concluídas</option>
+        </select>
+      </div>
+
+      <div id="taskList" class="task-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>ObraTrack — o teu projeto de portfólio em programação.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
