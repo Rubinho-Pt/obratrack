@@ -31,8 +31,22 @@ const icons = {
 };
 
 const priorityMap = { Baixa:"Low", "Média":"Medium", Alta:"High" };
-let tasks = JSON.parse(localStorage.getItem("obraTrackTasks")) || [];
-tasks = tasks.map(task => ({ ...task, priority: priorityMap[task.priority] || task.priority }));
+
+// CORREÇÃO 1: leitura segura do localStorage, com fallback para [] se os dados
+// estiverem corrompidos ou não forem uma lista válida.
+function loadTasks() {
+  try {
+    const raw = localStorage.getItem("obraTrackTasks");
+    const parsed = raw ? JSON.parse(raw) : [];
+    if (!Array.isArray(parsed)) return [];
+    return parsed;
+  } catch (err) {
+    console.error("Dados de tarefas inválidos no localStorage, a repor lista vazia.", err);
+    return [];
+  }
+}
+
+let tasks = loadTasks().map(task => ({ ...task, priority: priorityMap[task.priority] || task.priority }));
 let currentLanguage = localStorage.getItem("obraTrackLanguage") || "pt";
 let toastTimer;
 
@@ -92,12 +106,25 @@ function deleteTask(id) { tasks=tasks.filter(task=>task.id!==id); saveTasks(); u
 
 taskForm.addEventListener("submit",event=>{
   event.preventDefault();
+
+  // CORREÇÃO 2: impede duplo submit enquanto a tarefa anterior ainda está a ser guardada.
+  if (submitButton.disabled) return;
+  submitButton.disabled = true;
+
   submitButton.classList.add("loading");
   submitButton.innerHTML=`${icons.loader}<span>${text().adding}</span>`;
-  const task={id:Date.now(),name:document.getElementById("taskName").value.trim(),project:document.getElementById("projectName").value.trim(),dueDate:document.getElementById("dueDate").value,priority:document.getElementById("priority").value,completed:false};
+  const task={
+    id: Date.now() + Math.random(), // evita colisão de IDs em cliques muito rápidos
+    name:document.getElementById("taskName").value.trim(),
+    project:document.getElementById("projectName").value.trim(),
+    dueDate:document.getElementById("dueDate").value,
+    priority:document.getElementById("priority").value,
+    completed:false
+  };
   setTimeout(()=>{
     tasks.unshift(task); saveTasks(); updateStats(); taskForm.reset(); submitButton.classList.remove("loading");
     submitButton.innerHTML='<svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg><span data-i18n="addTask"></span>';
+    submitButton.disabled = false;
     applyLanguage(currentLanguage); showToast(text().taskAdded);
   },280);
 });
