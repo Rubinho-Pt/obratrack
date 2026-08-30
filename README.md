@@ -1,39 +1,27 @@
-# ObraTrack
-
-Aplicação web para organizar tarefas, prazos e prioridades em obras.
-
-## Sobre o projeto
-
-O ObraTrack foi criado para ajudar profissionais da construção civil a acompanhar o trabalho de cada obra de forma simples.
-
-Este é um projeto pessoal desenvolvido durante a minha transição da construção civil para programação.
-
-## Funcionalidades
-
-- Criar tarefas
-- Associar tarefas a uma obra
-- Definir prazos
-- Escolher prioridade: baixa, média ou alta
-- Marcar tarefas como concluídas
-- Filtrar tarefas pendentes e concluídas
-- Guardar tarefas no navegador
-
-## Tecnologias utilizadas
-
+ObraTrack
+A web application for organizing tasks, deadlines, and priorities across construction projects.
+About the Project
+ObraTrack was created to help construction professionals manage and monitor the work involved in each project in a simple way.
+This is a personal project developed during my career transition from construction to software development.
+Features
+- Create tasks
+- Assign tasks to a construction project
+- Set deadlines
+- Choose a priority: low, medium, or high
+- Mark tasks as completed
+- Filter pending and completed tasks
+- Save tasks in the browser
+Technologies Used
 - HTML
 - CSS
 - JavaScript
 - Local Storage
-
-## Próximas melhorias
-
-- Editar tarefas
-- Registar materiais e custos
-- Criar áreas separadas para cada obra
-- Melhorar a versão para telemóvel
-- Adicionar login e base de dados
-
-## Autor
-
-Ruben Rodrigues  
-Em transição da construção civil para programação.
+Planned Improvements
+- Edit tasks
+- Track materials and costs
+- Create separate areas for each construction project
+- Improve the mobile version
+- Add user authentication and a database
+Author
+Ruben Rodrigues
+Transitioning from construction to software development.
