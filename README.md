@@ -1,35 +1,45 @@
-ObraTrack
+# ObraTrack
 
-A web application for organizing tasks, deadlines, and priorities across construction projects.
-About the Project
-ObraTrack was created to help construction professionals manage and monitor the work involved in each project in a simple way.
-This is a personal project developed during my career transition from construction to software development.
+A responsive, multilingual web application for managing tasks, deadlines, and priorities across construction projects.
 
-Features
-- Create tasks
-- Assign tasks to a construction project
-- Set deadlines
-- Choose a priority: low, medium, or high
-- Mark tasks as completed
+## About the Project
+
+ObraTrack helps construction professionals organize and monitor project activities through a simple, clear, and professional interface.
+
+This personal project was developed by Ruben Rodrigues as part of his transition from construction to software development.
+
+## Features
+
+- Create and organize tasks
+- Assign tasks to construction projects
+- Set deadlines and priorities
+- Mark tasks as completed or reopen them
 - Filter pending and completed tasks
-- Save tasks in the browser
+- Save tasks locally in the browser
+- Switch between Portuguese, English, French, and German
+- Responsive interface for desktop, tablet, and mobile
+- Validation of saved tasks and priorities
+- Protection against corrupted browser data
+- Clear loading, empty, success, and error states
 
-Technologies Used
-- HTML
-- CSS
+## Technologies
+
+- HTML5
+- CSS3
 - JavaScript
-- Local Storage
+- Web Storage API (`localStorage`)
+- GitHub Pages
 
-Planned Improvements
-- Edit tasks
-- Track materials and costs
-- Create separate areas for each construction project
-- Improve the mobile version
-- Add user authentication and a database
-  
-Author
-Ruben Rodrigues
+## Planned Improvements
+
+- Edit existing tasks
+- Track materials and project costs
+- Create dedicated areas for each construction project
+- Add user authentication
+- Connect the application to a database
+- Add cloud synchronization and team collaboration
+
+## Author
+
+**Ruben Rodrigues**  
 Transitioning from construction to software development.
-
-
-17:07
