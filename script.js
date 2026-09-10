@@ -11,16 +11,24 @@ const completedTasks = document.getElementById("completedTasks");
 
 const translations = {
   pt: {
-    locale:"pt-PT", brandTagline:"Gestão de obra", overview:"Visão geral", tasks:"Tarefas", dataSynced:"Dados sincronizados", savedDevice:"Guardados neste dispositivo", controlPanel:"PAINEL DE CONTROLO", greeting:"Bom trabalho", subtitle:"Acompanhe o progresso da obra e mantenha a equipa alinhada.", language:"Idioma", totalTasksLabel:"Total de tarefas", allProjects:"Em todas as obras", pendingLabel:"Por concluir", attention:"Requerem atenção", completedLabel:"Concluídas", overallProgress:"Progresso acumulado", planning:"PLANEAMENTO", newTask:"Nova tarefa", newTaskHelp:"Registe uma atividade e associe-a à obra certa.", taskLabel:"Tarefa", projectLabel:"Obra", dueDate:"Prazo", priorityLabel:"Prioridade", taskPlaceholder:"Ex.: Confirmar entrega de cimento", projectPlaceholder:"Ex.: Remodelação T2", required:"Todos os campos são obrigatórios.", addTask:"Adicionar tarefa", adding:"A adicionar…", execution:"EXECUÇÃO", myTasks:"As minhas tarefas", tasksHelp:"Organize prioridades e acompanhe o trabalho em curso.", show:"Mostrar", statusTask:"Estado / tarefa", actions:"Ações", footerTagline:"Construir melhor, com clareza.", all:"Todas as tarefas", pending:"Por concluir", completed:"Concluídas", Low:"Baixa", Medium:"Média", High:"Alta", due:"Prazo", noTasks:"Sem tarefas por agora", noTasksHelp:"Adicione a primeira tarefa para começar a planear.", allDone:"Tudo tratado", allDoneHelp:"Não existem tarefas por concluir nesta lista.", noCompleted:"Ainda sem conclusões", noCompletedHelp:"As tarefas concluídas irão aparecer aqui.", reopen:"Reabrir tarefa", complete:"Concluir tarefa", delete:"Eliminar tarefa", taskCompleted:"Tarefa concluída", taskReopened:"Tarefa reaberta", taskDeleted:"Tarefa eliminada", taskAdded:"Tarefa adicionada com sucesso", invalidTask:"Preencha todos os campos com valores válidos.", saveError:"Não foi possível guardar. Verifique o armazenamento do navegador.", loadError:"Alguns dados guardados eram inválidos e foram ignorados."
+    darkMode:"Modo escuro",
+    skipContent:"Saltar para o conteúdo",navigation:"Navegação principal",workspace:"ESPAÇO DE TRABALHO",taskSummary:"Resumo das tarefas",completionRate:"Taxa de conclusão",overdue:"Em atraso",pendingStatus:"Pendente",completedStatus:"Concluída",
+    locale:"pt-PT", brandTagline:"Gestão de obra", overview:"Visão geral", tasks:"Tarefas", dataSynced:"Dados locais", savedDevice:"Guardados neste dispositivo", controlPanel:"PAINEL DE CONTROLO", greeting:"Bom trabalho", subtitle:"Acompanhe o progresso da obra e mantenha a equipa alinhada.", language:"Idioma", totalTasksLabel:"Total de tarefas", allProjects:"Em todas as obras", pendingLabel:"Por concluir", attention:"Requerem atenção", completedLabel:"Concluídas", overallProgress:"Progresso acumulado", planning:"PLANEAMENTO", newTask:"Nova tarefa", newTaskHelp:"Registe uma atividade e associe-a à obra certa.", taskLabel:"Tarefa", projectLabel:"Obra", dueDate:"Prazo", priorityLabel:"Prioridade", taskPlaceholder:"Ex.: Confirmar entrega de cimento", projectPlaceholder:"Ex.: Remodelação T2", required:"Todos os campos são obrigatórios.", addTask:"Adicionar tarefa", adding:"A adicionar…", execution:"EXECUÇÃO", myTasks:"As minhas tarefas", tasksHelp:"Organize prioridades e acompanhe o trabalho em curso.", show:"Mostrar", statusTask:"Estado / tarefa", actions:"Ações", footerTagline:"Construir melhor, com clareza.", all:"Todas as tarefas", pending:"Por concluir", completed:"Concluídas", Low:"Baixa", Medium:"Média", High:"Alta", due:"Prazo", noTasks:"Sem tarefas por agora", noTasksHelp:"Adicione a primeira tarefa para começar a planear.", allDone:"Tudo tratado", allDoneHelp:"Não existem tarefas por concluir nesta lista.", noCompleted:"Ainda sem conclusões", noCompletedHelp:"As tarefas concluídas irão aparecer aqui.", reopen:"Reabrir tarefa", complete:"Concluir tarefa", delete:"Eliminar tarefa", taskCompleted:"Tarefa concluída", taskReopened:"Tarefa reaberta", taskDeleted:"Tarefa eliminada", taskAdded:"Tarefa adicionada com sucesso", invalidTask:"Preencha todos os campos com valores válidos.", saveError:"Não foi possível guardar. Verifique o armazenamento do navegador.", loadError:"Alguns dados guardados eram inválidos e foram ignorados."
   },
   en: {
-    locale:"en-GB", brandTagline:"Construction management", overview:"Overview", tasks:"Tasks", dataSynced:"Data synced", savedDevice:"Saved on this device", controlPanel:"CONTROL PANEL", greeting:"Let’s get to work", subtitle:"Track project progress and keep your team aligned.", language:"Language", totalTasksLabel:"Total tasks", allProjects:"Across all projects", pendingLabel:"To complete", attention:"Require attention", completedLabel:"Completed", overallProgress:"Overall progress", planning:"PLANNING", newTask:"New task", newTaskHelp:"Register an activity and assign it to the right project.", taskLabel:"Task", projectLabel:"Project", dueDate:"Due date", priorityLabel:"Priority", taskPlaceholder:"E.g. Confirm concrete delivery", projectPlaceholder:"E.g. Apartment renovation", required:"All fields are required.", addTask:"Add task", adding:"Adding…", execution:"EXECUTION", myTasks:"My tasks", tasksHelp:"Organize priorities and track work in progress.", show:"Show", statusTask:"Status / task", actions:"Actions", footerTagline:"Build better, with clarity.", all:"All tasks", pending:"To complete", completed:"Completed", Low:"Low", Medium:"Medium", High:"High", due:"Due", noTasks:"No tasks yet", noTasksHelp:"Add your first task to start planning.", allDone:"All caught up", allDoneHelp:"There are no outstanding tasks on this list.", noCompleted:"No completed tasks yet", noCompletedHelp:"Completed tasks will appear here.", reopen:"Reopen task", complete:"Complete task", delete:"Delete task", taskCompleted:"Task completed", taskReopened:"Task reopened", taskDeleted:"Task deleted", taskAdded:"Task added successfully", invalidTask:"Complete every field with valid values.", saveError:"Could not save your changes. Check browser storage and try again.", loadError:"Some saved data was invalid and has been ignored."
+    darkMode:"Dark mode",
+    skipContent:"Skip to content",navigation:"Main navigation",workspace:"WORKSPACE",taskSummary:"Task summary",completionRate:"Completion rate",overdue:"Overdue",pendingStatus:"Pending",completedStatus:"Completed",
+    locale:"en-GB", brandTagline:"Construction management", overview:"Overview", tasks:"Tasks", dataSynced:"Local data", savedDevice:"Saved on this device", controlPanel:"CONTROL PANEL", greeting:"Let’s get to work", subtitle:"Track project progress and keep your team aligned.", language:"Language", totalTasksLabel:"Total tasks", allProjects:"Across all projects", pendingLabel:"To complete", attention:"Require attention", completedLabel:"Completed", overallProgress:"Overall progress", planning:"PLANNING", newTask:"New task", newTaskHelp:"Register an activity and assign it to the right project.", taskLabel:"Task", projectLabel:"Project", dueDate:"Due date", priorityLabel:"Priority", taskPlaceholder:"E.g. Confirm concrete delivery", projectPlaceholder:"E.g. Apartment renovation", required:"All fields are required.", addTask:"Add task", adding:"Adding…", execution:"EXECUTION", myTasks:"My tasks", tasksHelp:"Organize priorities and track work in progress.", show:"Show", statusTask:"Status / task", actions:"Actions", footerTagline:"Build better, with clarity.", all:"All tasks", pending:"To complete", completed:"Completed", Low:"Low", Medium:"Medium", High:"High", due:"Due", noTasks:"No tasks yet", noTasksHelp:"Add your first task to start planning.", allDone:"All caught up", allDoneHelp:"There are no outstanding tasks on this list.", noCompleted:"No completed tasks yet", noCompletedHelp:"Completed tasks will appear here.", reopen:"Reopen task", complete:"Complete task", delete:"Delete task", taskCompleted:"Task completed", taskReopened:"Task reopened", taskDeleted:"Task deleted", taskAdded:"Task added successfully", invalidTask:"Complete every field with valid values.", saveError:"Could not save your changes. Check browser storage and try again.", loadError:"Some saved data was invalid and has been ignored."
   },
   fr: {
-    locale:"fr-FR", brandTagline:"Gestion de chantier", overview:"Vue d’ensemble", tasks:"Tâches", dataSynced:"Données synchronisées", savedDevice:"Enregistrées sur cet appareil", controlPanel:"TABLEAU DE BORD", greeting:"Bon travail", subtitle:"Suivez l’avancement du chantier et gardez votre équipe alignée.", language:"Langue", totalTasksLabel:"Total des tâches", allProjects:"Tous les chantiers", pendingLabel:"À terminer", attention:"Demandent votre attention", completedLabel:"Terminées", overallProgress:"Progression globale", planning:"PLANIFICATION", newTask:"Nouvelle tâche", newTaskHelp:"Enregistrez une activité et associez-la au bon chantier.", taskLabel:"Tâche", projectLabel:"Chantier", dueDate:"Échéance", priorityLabel:"Priorité", taskPlaceholder:"Ex. : Confirmer la livraison du béton", projectPlaceholder:"Ex. : Rénovation appartement", required:"Tous les champs sont obligatoires.", addTask:"Ajouter la tâche", adding:"Ajout…", execution:"EXÉCUTION", myTasks:"Mes tâches", tasksHelp:"Organisez les priorités et suivez le travail en cours.", show:"Afficher", statusTask:"État / tâche", actions:"Actions", footerTagline:"Mieux construire, en toute clarté.", all:"Toutes les tâches", pending:"À terminer", completed:"Terminées", Low:"Faible", Medium:"Moyenne", High:"Haute", due:"Échéance", noTasks:"Aucune tâche", noTasksHelp:"Ajoutez votre première tâche pour commencer.", allDone:"Tout est fait", allDoneHelp:"Aucune tâche n’est en attente.", noCompleted:"Aucune tâche terminée", noCompletedHelp:"Les tâches terminées apparaîtront ici.", reopen:"Rouvrir la tâche", complete:"Terminer la tâche", delete:"Supprimer la tâche", taskCompleted:"Tâche terminée", taskReopened:"Tâche rouverte", taskDeleted:"Tâche supprimée", taskAdded:"Tâche ajoutée avec succès", invalidTask:"Remplissez tous les champs avec des valeurs valides.", saveError:"Impossible d’enregistrer. Vérifiez le stockage du navigateur.", loadError:"Certaines données invalides ont été ignorées."
+    darkMode:"Mode sombre",
+    skipContent:"Aller au contenu",navigation:"Navigation principale",workspace:"ESPACE DE TRAVAIL",taskSummary:"Résumé des tâches",completionRate:"Taux de réalisation",overdue:"En retard",pendingStatus:"À faire",completedStatus:"Terminée",
+    locale:"fr-FR", brandTagline:"Gestion de chantier", overview:"Vue d’ensemble", tasks:"Tâches", dataSynced:"Données locales", savedDevice:"Enregistrées sur cet appareil", controlPanel:"TABLEAU DE BORD", greeting:"Bon travail", subtitle:"Suivez l’avancement du chantier et gardez votre équipe alignée.", language:"Langue", totalTasksLabel:"Total des tâches", allProjects:"Tous les chantiers", pendingLabel:"À terminer", attention:"Demandent votre attention", completedLabel:"Terminées", overallProgress:"Progression globale", planning:"PLANIFICATION", newTask:"Nouvelle tâche", newTaskHelp:"Enregistrez une activité et associez-la au bon chantier.", taskLabel:"Tâche", projectLabel:"Chantier", dueDate:"Échéance", priorityLabel:"Priorité", taskPlaceholder:"Ex. : Confirmer la livraison du béton", projectPlaceholder:"Ex. : Rénovation appartement", required:"Tous les champs sont obligatoires.", addTask:"Ajouter la tâche", adding:"Ajout…", execution:"EXÉCUTION", myTasks:"Mes tâches", tasksHelp:"Organisez les priorités et suivez le travail en cours.", show:"Afficher", statusTask:"État / tâche", actions:"Actions", footerTagline:"Mieux construire, en toute clarté.", all:"Toutes les tâches", pending:"À terminer", completed:"Terminées", Low:"Faible", Medium:"Moyenne", High:"Haute", due:"Échéance", noTasks:"Aucune tâche", noTasksHelp:"Ajoutez votre première tâche pour commencer.", allDone:"Tout est fait", allDoneHelp:"Aucune tâche n’est en attente.", noCompleted:"Aucune tâche terminée", noCompletedHelp:"Les tâches terminées apparaîtront ici.", reopen:"Rouvrir la tâche", complete:"Terminer la tâche", delete:"Supprimer la tâche", taskCompleted:"Tâche terminée", taskReopened:"Tâche rouverte", taskDeleted:"Tâche supprimée", taskAdded:"Tâche ajoutée avec succès", invalidTask:"Remplissez tous les champs avec des valeurs valides.", saveError:"Impossible d’enregistrer. Vérifiez le stockage du navigateur.", loadError:"Certaines données invalides ont été ignorées."
   },
   de: {
-    locale:"de-DE", brandTagline:"Baustellenmanagement", overview:"Übersicht", tasks:"Aufgaben", dataSynced:"Daten synchronisiert", savedDevice:"Auf diesem Gerät gespeichert", controlPanel:"KONTROLLZENTRUM", greeting:"Gute Arbeit", subtitle:"Verfolgen Sie den Baufortschritt und halten Sie Ihr Team auf Kurs.", language:"Sprache", totalTasksLabel:"Aufgaben gesamt", allProjects:"In allen Projekten", pendingLabel:"Offen", attention:"Benötigen Aufmerksamkeit", completedLabel:"Erledigt", overallProgress:"Gesamtfortschritt", planning:"PLANUNG", newTask:"Neue Aufgabe", newTaskHelp:"Erfassen Sie eine Aktivität und ordnen Sie sie dem richtigen Projekt zu.", taskLabel:"Aufgabe", projectLabel:"Projekt", dueDate:"Fälligkeitsdatum", priorityLabel:"Priorität", taskPlaceholder:"Z. B. Betonlieferung bestätigen", projectPlaceholder:"Z. B. Wohnungsrenovierung", required:"Alle Felder sind erforderlich.", addTask:"Aufgabe hinzufügen", adding:"Wird hinzugefügt…", execution:"AUSFÜHRUNG", myTasks:"Meine Aufgaben", tasksHelp:"Prioritäten organisieren und laufende Arbeiten verfolgen.", show:"Anzeigen", statusTask:"Status / Aufgabe", actions:"Aktionen", footerTagline:"Besser bauen, mit Klarheit.", all:"Alle Aufgaben", pending:"Offen", completed:"Erledigt", Low:"Niedrig", Medium:"Mittel", High:"Hoch", due:"Fällig", noTasks:"Noch keine Aufgaben", noTasksHelp:"Fügen Sie die erste Aufgabe hinzu.", allDone:"Alles erledigt", allDoneHelp:"Es gibt keine offenen Aufgaben.", noCompleted:"Noch nichts erledigt", noCompletedHelp:"Erledigte Aufgaben erscheinen hier.", reopen:"Aufgabe wieder öffnen", complete:"Aufgabe erledigen", delete:"Aufgabe löschen", taskCompleted:"Aufgabe erledigt", taskReopened:"Aufgabe wieder geöffnet", taskDeleted:"Aufgabe gelöscht", taskAdded:"Aufgabe erfolgreich hinzugefügt", invalidTask:"Füllen Sie alle Felder mit gültigen Werten aus.", saveError:"Speichern nicht möglich. Prüfen Sie den Browser-Speicher.", loadError:"Einige ungültige gespeicherte Daten wurden ignoriert."
+    darkMode:"Dunkelmodus",
+    skipContent:"Zum Inhalt springen",navigation:"Hauptnavigation",workspace:"ARBEITSBEREICH",taskSummary:"Aufgabenübersicht",completionRate:"Abschlussquote",overdue:"Überfällig",pendingStatus:"Offen",completedStatus:"Erledigt",
+    locale:"de-DE", brandTagline:"Baustellenmanagement", overview:"Übersicht", tasks:"Aufgaben", dataSynced:"Lokale Daten", savedDevice:"Auf diesem Gerät gespeichert", controlPanel:"KONTROLLZENTRUM", greeting:"Gute Arbeit", subtitle:"Verfolgen Sie den Baufortschritt und halten Sie Ihr Team auf Kurs.", language:"Sprache", totalTasksLabel:"Aufgaben gesamt", allProjects:"In allen Projekten", pendingLabel:"Offen", attention:"Benötigen Aufmerksamkeit", completedLabel:"Erledigt", overallProgress:"Gesamtfortschritt", planning:"PLANUNG", newTask:"Neue Aufgabe", newTaskHelp:"Erfassen Sie eine Aktivität und ordnen Sie sie dem richtigen Projekt zu.", taskLabel:"Aufgabe", projectLabel:"Projekt", dueDate:"Fälligkeitsdatum", priorityLabel:"Priorität", taskPlaceholder:"Z. B. Betonlieferung bestätigen", projectPlaceholder:"Z. B. Wohnungsrenovierung", required:"Alle Felder sind erforderlich.", addTask:"Aufgabe hinzufügen", adding:"Wird hinzugefügt…", execution:"AUSFÜHRUNG", myTasks:"Meine Aufgaben", tasksHelp:"Prioritäten organisieren und laufende Arbeiten verfolgen.", show:"Anzeigen", statusTask:"Status / Aufgabe", actions:"Aktionen", footerTagline:"Besser bauen, mit Klarheit.", all:"Alle Aufgaben", pending:"Offen", completed:"Erledigt", Low:"Niedrig", Medium:"Mittel", High:"Hoch", due:"Fällig", noTasks:"Noch keine Aufgaben", noTasksHelp:"Fügen Sie die erste Aufgabe hinzu.", allDone:"Alles erledigt", allDoneHelp:"Es gibt keine offenen Aufgaben.", noCompleted:"Noch nichts erledigt", noCompletedHelp:"Erledigte Aufgaben erscheinen hier.", reopen:"Aufgabe wieder öffnen", complete:"Aufgabe erledigen", delete:"Aufgabe löschen", taskCompleted:"Aufgabe erledigt", taskReopened:"Aufgabe wieder geöffnet", taskDeleted:"Aufgabe gelöscht", taskAdded:"Aufgabe erfolgreich hinzugefügt", invalidTask:"Füllen Sie alle Felder mit gültigen Werten aus.", saveError:"Speichern nicht möglich. Prüfen Sie den Browser-Speicher.", loadError:"Einige ungültige gespeicherte Daten wurden ignoriert."
   }
 };
 
@@ -58,12 +66,18 @@ function clearFormError() { formError.textContent=""; formError.classList.remove
 function escapeHTML(value) { const el=document.createElement("span"); el.textContent=value; return el.innerHTML; }
 function formatDate(date) { return new Date(`${date}T00:00:00`).toLocaleDateString(text().locale,{day:"2-digit",month:"short",year:"numeric"}); }
 function showToast(message) { toast.textContent=message; toast.classList.add("show"); clearTimeout(toastTimer); toastTimer=setTimeout(()=>toast.classList.remove("show"),2200); }
-function updateStats() { totalTasks.textContent=tasks.length; pendingTasks.textContent=tasks.filter(task=>!task.completed).length; completedTasks.textContent=tasks.filter(task=>task.completed).length; }
+function updateStats() {
+  const rate=tasks.length?Math.round(tasks.filter(task=>task.completed).length/tasks.length*100):0;
+  document.getElementById("completionRate").textContent=`${rate}%`;
+  document.getElementById("completionProgress").value=rate;
+  totalTasks.textContent=tasks.length; pendingTasks.textContent=tasks.filter(task=>!task.completed).length; completedTasks.textContent=tasks.filter(task=>task.completed).length; }
 
 function applyLanguage(language) {
   currentLanguage = translations[language] ? language : "pt";
   const copy = text();
-  document.documentElement.lang = currentLanguage;
+  document.documentElement.lang = copy.locale;
+  document.title = `ObraTrack — ${copy.brandTagline}`;
+  document.querySelectorAll("[data-i18n-aria]").forEach(el => el.setAttribute("aria-label",copy[el.dataset.i18nAria]));
   try { localStorage.setItem("obraTrackLanguage", currentLanguage); } catch { /* Language still changes for this session. */ }
   languageSelect.value = currentLanguage;
   languageSelect.setAttribute("aria-label", copy.language);
@@ -93,8 +107,12 @@ function renderTasks() {
   filtered.forEach(task=>{
     const article=document.createElement("article");
     article.className=`task ${task.completed?"completed":""}`;
+    const now = new Date();
+    const today = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,"0")}-${String(now.getDate()).padStart(2,"0")}`;
+    const overdue = !task.completed && task.dueDate < today;
+    const statusLabel = task.completed ? copy.completedStatus : overdue ? copy.overdue : copy.pendingStatus;
     const toggleLabel=task.completed?copy.reopen:copy.complete;
-    article.innerHTML=`<div class="task-main"><button class="complete-button" type="button" aria-label="${toggleLabel}" title="${toggleLabel}">${icons.check}</button><div class="task-copy"><p class="task-title">${escapeHTML(task.name)}</p><p class="task-info">${escapeHTML(task.project)} · ${copy.due}: ${formatDate(task.dueDate)}</p></div></div><span class="priority ${task.priority}">${copy[task.priority]}</span><button class="delete-button" type="button" aria-label="${copy.delete}" title="${copy.delete}">${icons.trash}</button>`;
+    article.innerHTML=`<div class="task-main"><button class="complete-button" type="button" aria-label="${toggleLabel}" title="${toggleLabel}" aria-pressed="${task.completed}">${icons.check}</button><div class="task-copy"><p class="task-title">${escapeHTML(task.name)}</p><p class="task-info"><span>${escapeHTML(task.project)}</span><span class="task-date ${overdue?"overdue":""}">${copy.due}: ${formatDate(task.dueDate)}</span></p><span class="task-status ${task.completed?"done":overdue?"late":"open"}">${statusLabel}</span></div></div><span class="priority ${task.priority}">${copy[task.priority]}</span><button class="delete-button" type="button" aria-label="${copy.delete}" title="${copy.delete}">${icons.trash}</button>`;
     article.querySelector(".complete-button").addEventListener("click",()=>toggleTask(task.id));
     article.querySelector(".delete-button").addEventListener("click",()=>deleteTask(task.id));
     taskList.appendChild(article);
@@ -110,8 +128,15 @@ function toggleTask(id) {
 }
 function deleteTask(id) { const previous=tasks; tasks=tasks.filter(task=>task.id!==id); if(!saveTasks()){tasks=previous;return;} clearFormError(); updateStats(); renderTasks(); showToast(text().taskDeleted); }
 
+function restoreSubmitButton() {
+  submitButton.disabled=false;
+  submitButton.classList.remove("loading");
+  submitButton.innerHTML='<svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg><span data-i18n="addTask"></span>';
+}
+
 taskForm.addEventListener("submit",event=>{
   event.preventDefault();
+  if(submitButton.disabled) return;
   clearFormError();
   const task=normalizeTask({id:createId(),name:document.getElementById("taskName").value.trim(),project:document.getElementById("projectName").value.trim(),dueDate:document.getElementById("dueDate").value,priority:document.getElementById("priority").value,completed:false});
   if(!task){showFormError(text().invalidTask);return;}
@@ -120,9 +145,8 @@ taskForm.addEventListener("submit",event=>{
   submitButton.innerHTML=`${icons.loader}<span>${text().adding}</span>`;
   setTimeout(()=>{
     tasks.unshift(task);
-    if(!saveTasks()){tasks.shift();submitButton.disabled=false;submitButton.classList.remove("loading");applyLanguage(currentLanguage);return;}
-    updateStats(); taskForm.reset(); submitButton.disabled=false; submitButton.classList.remove("loading");
-    submitButton.innerHTML='<svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg><span data-i18n="addTask"></span>';
+    if(!saveTasks()){tasks.shift();restoreSubmitButton();applyLanguage(currentLanguage);return;}
+    updateStats(); taskForm.reset(); restoreSubmitButton();
     applyLanguage(currentLanguage); showToast(text().taskAdded);
   },280);
 });
@@ -133,3 +157,29 @@ taskForm.addEventListener("input",clearFormError);
 document.getElementById("currentYear").textContent=new Date().getFullYear();
 updateStats();
 applyLanguage(currentLanguage);
+
+function updateNavigation() {
+  const destination = location.hash || "#dashboard";
+  document.querySelectorAll(".nav-item").forEach(link => {
+    const active = link.getAttribute("href") === destination;
+    link.classList.toggle("active",active);
+    if(active) link.setAttribute("aria-current","location");
+    else link.removeAttribute("aria-current");
+  });
+}
+window.addEventListener("hashchange",updateNavigation);
+updateNavigation();
+
+const themeToggle = document.getElementById("themeToggle");
+function syncThemeControl() {
+  const dark = document.documentElement.dataset.theme === "dark";
+  themeToggle.setAttribute("aria-pressed", String(dark));
+  document.querySelector('meta[name="theme-color"]').content = dark ? "#101a28" : "#f3f6fa";
+}
+themeToggle.addEventListener("click", () => {
+  const theme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+  document.documentElement.dataset.theme = theme;
+  try { localStorage.setItem("obraTrackTheme", theme); } catch { /* Keep the choice for this page. */ }
+  syncThemeControl();
+});
+syncThemeControl();
