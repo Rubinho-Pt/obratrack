@@ -37,7 +37,7 @@ h2{font-size:1.25rem;margin:0}
 .header-meta{display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:flex-end}
 .date{font-size:.8125rem;color:var(--muted);text-transform:capitalize;order:3;flex-basis:100%;text-align:right}
 .avatar{display:grid;place-items:center;width:44px;height:44px;flex-shrink:0;border-radius:50%;background:#e3ebf3;color:#354d69;font-size:.8125rem;font-weight:700}
-.language-control{width:74px}
+.language-control{width:74px;flex:0 0 74px;position:relative}
 .language-control select{padding:0 10px}
 main{max-width:1600px;margin:auto;padding:0 40px 40px}
 .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:0 0 28px}
@@ -227,8 +227,8 @@ footer{padding-inline:16px;flex-direction:column;align-items:center;gap:5px}
 /* Two hinged faces mimic a physical ON/OFF rocker. State remains aria-pressed. */
 .theme-control{display:flex;flex-direction:column;align-items:center;gap:6px;flex-shrink:0}
 .theme-caption{font-size:.75rem;font-weight:600;color:var(--muted);line-height:1.2}
-.theme-toggle{width:112px;height:48px;display:block;padding:4px;border:1px solid #777f88;border-radius:11px;background:linear-gradient(145deg,#aab2bc,#edf0f3 48%,#9aa5b2);box-shadow:inset 0 2px 3px #0008,0 1px 0 #fff8;perspective:180px;flex-shrink:0}
-.rocker{display:flex;width:100%;height:100%;border-radius:7px;filter:drop-shadow(0 3px 2px #0005)}
+.theme-toggle{width:112px;height:48px;display:block;padding:4px;border:1px solid #777f88;border-radius:11px;background:linear-gradient(145deg,#aab2bc,#edf0f3 48%,#9aa5b2);box-shadow:inset 0 2px 3px #0008,0 1px 0 #fff8;perspective:180px;flex-shrink:0;position:relative;overflow:hidden;isolation:isolate}
+.rocker{pointer-events:none;display:flex;width:100%;height:100%;border-radius:7px;filter:drop-shadow(0 3px 2px #0005)}
 .rocker-on,.rocker-off{display:flex;align-items:center;justify-content:center;width:50%;height:100%;font:800 .9375rem/1 'Manrope',system-ui,sans-serif;letter-spacing:.03em;transition:transform .2s ease,color .2s ease,background .2s ease;backface-visibility:hidden}
 .rocker-on{transform-origin:right center;transform:rotateY(-22deg);border-radius:6px 0 0 6px;background:linear-gradient(110deg,#c3c7cb,#f3f4f5);color:#71777d;text-shadow:0 1px 0 #fff;box-shadow:inset 0 1px 0 #fff,inset 1px 0 1px #fff9}
 .rocker-off{transform-origin:left center;transform:rotateY(-7deg);border-radius:0 6px 6px 0;background:linear-gradient(90deg,#e5e7e9,#fafbfc);color:#b32b26;text-shadow:0 1px 0 white;box-shadow:inset 0 1px 0 white,inset -1px 0 1px #aeb4bb}
